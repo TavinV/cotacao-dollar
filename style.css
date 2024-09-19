@@ -1,63 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
 * {
-font-family: "Inter", sans-serif;
-transition: all 0.3s ease;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
+
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #eeeeee;
-    border-radius: 10px;
-    border: 2px solid #b0b0b0;
-    width: 30vw;
-    height: 55vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.main-container > h2 {
-    font-size: 2rem;
-    margin: 30px 20px;
-    color: #5995ED;
+.main-container>h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .content {
-    width: 70%;
-    height: 100px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 
-.content:hover > fieldset {
+.content:hover>fieldset {
     border-color: #86E9CB;
 }
 
-.content:hover > fieldset > legend {
+.content:hover>fieldset>legend {
     color: #86E9CB;
 }
 
-fieldset{
+fieldset {
     border-radius: 6px;
-    border-color: #5995ED;
+    border: 1px solid #5995ED;
     font-weight: 600;
     color: #5995ED;
+    padding: 10px;
+}
+
+legend {
+    font-size: 1.2rem;
 }
 
 p {
-    font-size: 2rem;
-    margin: 0;
-    margin-left: 2px;
-    color: #000000;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 #timestamp {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
 }
